@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  width: 80%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.navigation {
+  background-color: #e3e3e3;
+  float: left;
+  width: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation_list {
+  list-style: none;
+  width: 100%;
+}
+.navigation_list-item {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 30px 0px;
+  width: 100%;
+}
+.navigation_list-item span {
+  display: flex;
+  justify-content: center;
+}
+.navigation_list-item:hover,
+.navigation_list-item--active {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.welcome {
+  height: 60px;
+  background-color: rgb(219, 220, 221);
+  display: flex;
+  justify-content: space-between;
+}
+.welcome-item {
+  padding: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.welcome-item_subnav {
+}
+.welcome-item_subnav_list {
+  position: absolute;
+  top: 60px;
+  background-color: #e3e3e3;
+  right: 0;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  list-style-type: none;
+  z-index: -1;
+}
+.welcome-item_subnav_list-item {
+  margin-bottom: 5px;
+  padding: 5px 5px;
+}
+.welcome-item_subnav_list-item:hover {
+  color: #0c56d0;
+}
+strong {
+  color: #0c56d0;
+  font-weight: 500;
+}
+.welcome-item_subnav {
+  display: none;
+}
+.hidden-item:hover .welcome-item_subnav {
+  display: block;
+}
